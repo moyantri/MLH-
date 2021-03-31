@@ -1,5 +1,5 @@
 import random
-answer = random.randint(1, 20)
+answer = random.randint(1, 50)
 print('Im guessing a number from1 to 50')
 count = 0
 prediction = input()
