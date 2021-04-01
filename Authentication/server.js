@@ -15,7 +15,7 @@ app.post('/users', async (req, res) => {
     const hashedPassword = await bcrypt.hash(req.body.password, 10)
     const user = { name: req.body.name, password: hashedPassword }
     users.push(user)
-    res.status(201).send()
+    res.status(201).send()# The HTTP 201 Created success status response code.
   } catch {
     res.status(500).send()
   }
